@@ -1,12 +1,12 @@
-Advanced Python Review Exercise 1:
-==================================
+Advanced Python Review Exercise 1: until about 2:30
+================================== see https://pastebin.com/V5nX8aEw
 Write a class for 'Company' with properties for name and catch_phrase
 Write a class for 'Address' with properties for street, city and zipcode
 Write a class for 'User' with properties for id, name, address and company (instances of Address and Company)
 For each class, override the built-in __str__ method to print the properties nicely
 
 For your classes, use 'name mangling' for at least one property to prevent direct access (e.g. __name)
-Use @propert and @setter decorators to implement getter and setter methods in your classes
+Use @property and @setter decorators to implement getter and setter methods in your classes
 In the setter methods, check the value being set is a non-empty string (else provide sensible defaults)
 
 Use modules to encapsulate your code as you see fit

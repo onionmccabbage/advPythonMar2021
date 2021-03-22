@@ -6,6 +6,8 @@ class Duck():
     def __init__(self, name):
         self.__name = name
         Duck.count += 1
+    def __str__(self): # override the built in __str__ method
+        return self.name
     # we can declare class methods
     @classmethod
     def how_many(cls):
@@ -26,3 +28,5 @@ if __name__ == '__main__':
     print(d.get_name())
     Duck.info() # 
     print(Duck.how_many()) # calls the class method
+
+    print(d)

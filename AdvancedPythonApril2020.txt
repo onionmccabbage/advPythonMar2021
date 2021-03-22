@@ -8,29 +8,31 @@ Toby Dussek
 3:00 tea
 4:30 end
 
+Code repository is here: https://github.com/onionmccabbage/advPythonMar2021
+
 > please fill in profile form
 
-what do you currently know
-what do you want to know
-
 Monday
-- intro
+> intro
+> what do you currently know
+> what do you want to know
 > classes - properties
-- functional programming: map filter and reduce
-- labs
-- functional programming: parameters
+> functional programming: map filter and reduce
+> labs
 > comprehensions
-- iterators, generators
-- yield, next and custom generators 
+> generators
+> yield, next and custom generators 
 
 Tuesday
+- iterators __iter__
 - closures
+- functional programming: parameters
 - networking: url requests (more than just get)
 - introduce some end-points
+- networking server/client
 - after lunch lab exercise (inc optional material)
 - ask questions, help each other, share code (screen-share)
 - begin processing text xml json
-- networking server/client
 
 Wednesday
 - json.loads() takes JSON and returns Python structure
@@ -43,6 +45,7 @@ Wednesday
 - profiling
 
 Thursday
+- logging
 - multi threading, performance
 - revisit deque, defaultdict etc
 - all my code available online

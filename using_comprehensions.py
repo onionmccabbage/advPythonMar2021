@@ -22,5 +22,34 @@ print(my_set)
 
 # generator comprehension
 # range is a generator - it generates the values without persisting them
-for i in range(3, 99, 4):
-    print(i)
+# for i in range(3, 99, 4):
+#     print(i)
+
+# we can write our own generator
+def my_range(first=0, last=10*100, step=1):
+    number = first
+    while number < last:
+        # instead of a return statement, we have a yield statement
+        yield number # yields the next value in the sequence being generated
+        number += step
+
+if __name__ == '__main__':
+    print(my_range)
+    inst = my_range()
+    print(inst) # we have a generator object - remembers where we got to!!
+
+# we can use our custom generator
+    for x in inst:
+        print(x)
+
+    for x in inst: # the generator instance is exhausted, there are no more values to be yielded
+        print('value is: {}'.format(x))
+
+# we can explicitly call the 'next' member of a generator
+    inst2 = my_range() # we have a fresh generator instance (it will yield values)
+    print( inst2.__next__() ) # 0
+    print( inst2.__next__() ) # 1
+    print( inst2.__next__() )
+    print( inst2.__next__() )
+    # we can call the next members any time we like
+    print( '{}, {}, {}'.format( inst2.__next__(), inst2.__next__(), inst2.__next__() ))
