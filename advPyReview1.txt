@@ -1,0 +1,26 @@
+Advanced Python Review Exercise 1:
+==================================
+Write a class for 'Company' with properties for name and catch_phrase
+Write a class for 'Address' with properties for street, city and zipcode
+Write a class for 'User' with properties for id, name, address and company (instances of Address and Company)
+For each class, override the built-in __str__ method to print the properties nicely
+
+For your classes, use 'name mangling' for at least one property to prevent direct access (e.g. __name)
+Use @propert and @setter decorators to implement getter and setter methods in your classes
+In the setter methods, check the value being set is a non-empty string (else provide sensible defaults)
+
+Use modules to encapsulate your code as you see fit
+In each module, use if __name__ == "__main__": for your immediate code
+
+Optional
+--------
+Once set, do not allow the id property of a user to be changed (i.e. make it read only)
+Write a class property and method to keep a count of how many users are instantiated
+Write docstrings for your classes
+Use the 'DocChecker' meta_class from earlier to check there is always a docstring
+
+Inlcude numeric properties for lat and for lon in the Address class
+Implement __add__ and __iadd__ for lat and lon to ensure they stay within bounds (0 to 360)
+Check them by doing maths to lat-lon values and make sure they stay within the bound of 0 to 360
+
+Use try-except blocks as needed
