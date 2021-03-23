@@ -11,7 +11,8 @@ class WeatherGetter:
         url_str = 'http://api.openweathermap.org/data/2.5/weather?q={},{}&units=metric&{}'
         url = url_str.format(self.city, self.country, self.APIkey)
         response = requests.get(url)
-        data  = response.json()
+        # if we are sure it is json we can use response.json()
+        data  = response.json() # or response.text then json.dumps()
         if 'main' in data:
             # self.temperature = data['main']['temp']
             return data  

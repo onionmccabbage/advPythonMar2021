@@ -41,7 +41,7 @@ def readCities():
     for location in locations:
         city, country = location.split(',')
         # remove the trailing new-line character
-        country = country[:-1]
+        country = country.strip() # or country[:-1]
         main(city, country)
 
 def useLocationGenerator():
@@ -54,5 +54,5 @@ def useLocationGenerator():
 if __name__ == '__main__':
     pass
     # askUser()
-    # useLocationGenerator()
+    useLocationGenerator()
     # readCities()

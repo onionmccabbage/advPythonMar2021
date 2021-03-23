@@ -1,5 +1,5 @@
-Advanced Python Review 2
-========================
+Advanced Python Review 2 see https://pastebin.com/51a2hHcJ
+======================== until about 2:45
 In a new package, write modules to implement a weather service
 You can use the following end-point to get the current weather (as JSON):
 http://api.openweathermap.org/data/2.5/weather?q=athlone,ie&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
@@ -22,7 +22,7 @@ For every successful weather request, append the results to a file (either json.
 
 Optional:
 Write a custom generator which yields city/country pairs
-Usse this generator to make weather requests for the next city/country pair
+Use this generator to make weather requests for the __next__ city/country pair
 
 Write these 'city, country' values into a text file:
 '''Athlone,ie
@@ -30,7 +30,7 @@ Galway,ie
 Hull,uk
 Canberra,aus
 Berlin,de
-Mardrid,es'''
+Madrid,es'''
 Read in these city/country pairs and for each make a request for the current weather
 
 Initialise a weather database with a table and a few data members (e.g. date, city, country, description and temperature)

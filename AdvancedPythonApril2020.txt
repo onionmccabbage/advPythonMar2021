@@ -27,22 +27,24 @@ Question:
 > we can subsume the extra newline char when printing lines from a read-in file
 
 Tuesday
-- iterators __iter__
-- closures
-- functional programming: parameters
+> iterators __iter__
+> closures
+> functional programming: parameters
+> context manager
 - networking: url requests (more than just get)
 - introduce some end-points
 - networking server/client
-- after lunch lab exercise (inc optional material)
+> after lunch lab exercise (inc optional material)
 - ask questions, help each other, share code (screen-share)
 - begin processing text xml json
 
 Wednesday
-- json.loads() takes JSON and returns Python structure
-- json.dumps() takes Python and returns JSON
-- pickle ...
-- persisting files
-- databases
+> json.loads() takes JSON and returns Python structure
+> json.dumps() takes Python and returns JSON
+> pickle ...
+> persisting files
+> databases
+  see https://wiki.python.org/moin/DatabaseProgramming
 - after lunch lab exercise
 - testing
 - profiling
