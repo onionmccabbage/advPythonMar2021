@@ -14,4 +14,4 @@ curs.execute(statement) # apply the SQL statement to the db
 # commit the changes
 conn.commit()
 # always remember to close the connection
-conn.close() # close the connection and commit the changes
+conn.close() # close the connection

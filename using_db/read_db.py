@@ -10,4 +10,4 @@ rows = curs.fetchall()
 print(rows)
 # commit the changes
 conn.commit()
-conn.close() # close the connection and commit the changes
+conn.close() # close the connection 

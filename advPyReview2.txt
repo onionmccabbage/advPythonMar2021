@@ -1,0 +1,40 @@
+Advanced Python Review 2
+========================
+In a new package, write modules to implement a weather service
+You can use the following end-point to get the current weather (as JSON):
+http://api.openweathermap.org/data/2.5/weather?q=athlone,ie&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+
+Remember to import requests
+
+In your code, ask the user to input a city and a country (athlone and ie above) and inject them into the url
+Validate that they entered a non-empty string for city, and 2 or 3 letters for country
+
+Make a 'get' request to the 'openweathermap' API, using the city and country values entered by the user
+Convert the response text from JSON into a Python structure
+Print the weather description, temperature, wind-speed and wind-direction
+  e.g. if your returned data structure is called 'weather', do something like this: 
+	desc = weather['weather'][0]['description']
+    	temp = weather['main']['temp']
+   	wspd = weather['wind']['speed']
+    	wdir = weather['wind']['deg']
+
+For every successful weather request, append the results to a file (either json.dumps or pickle.dumps)
+
+Optional:
+Write a custom generator which yields city/country pairs
+Usse this generator to make weather requests for the next city/country pair
+
+Write these 'city, country' values into a text file:
+'''Athlone,ie
+Galway,ie
+Hull,uk
+Canberra,aus
+Berlin,de
+Mardrid,es'''
+Read in these city/country pairs and for each make a request for the current weather
+
+Initialise a weather database with a table and a few data members (e.g. date, city, country, description and temperature)
+For every weather report put the results into the database, including a date-time of when you created the report
+Provide a way to read back all the weather reports
+
+

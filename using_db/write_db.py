@@ -12,4 +12,4 @@ statement = '''INSERT INTO zoo VALUES("panda", 1, 10000.00)'''
 curs.execute(statement)
 # commit the changes
 conn.commit()
-conn.close() # close the connection and commit the changes
+conn.close() # close the connection 

@@ -1,1 +1,3 @@
-this gets printed into our log file
+here is some other text
+here is some text
+here is some other text

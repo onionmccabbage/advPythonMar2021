@@ -16,7 +16,8 @@ class Redirect:
         sys.stdout = self.save_stdout
 
 if __name__ == '__main__':
-    # print('here is some text', file='mylog.txt')
+    # fout = open('mylog.txt')
+    # print('here is some text', file=fout)
     # use our Redirect class
     with open('mylog.txt', 'w') as fobj: # the 'with' operator makes use of an object and closes it when done
         with Redirect(fobj):
