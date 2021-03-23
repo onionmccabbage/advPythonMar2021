@@ -45,7 +45,7 @@ class User(metaclass=my_meta.DocChecker):
 if __name__ == '__main__':
     a = Address('Main Street', 'Athlone', '123-456')
     c = Company('Mega Corp','Always there for you')
-    u1  = User(id=1, name='Ada', address=a, company=c)
+    u1 = User(id=1, name='Ada', address=a, company=c)
     u2 = User(2, 'Timnit', a, c) # these are ordinal parameters
     # we cannot change an id
     # u1.id = 99 # fails

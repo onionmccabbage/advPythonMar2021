@@ -1,0 +1,2 @@
+the while... loop will automatically close any open files
+which saves us doing it

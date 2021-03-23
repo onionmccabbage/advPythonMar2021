@@ -1,6 +1,6 @@
 class Company:
     '''
-    Compant class
+    Company class
     name and catchPhrase must be non-empty strings
     '''
     def __init__(self, name='', catchPhrase=''):

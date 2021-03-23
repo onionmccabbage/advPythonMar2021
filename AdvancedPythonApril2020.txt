@@ -23,6 +23,9 @@ Monday
 > generators
 > yield, next and custom generators 
 
+Question:
+> we can subsume the extra newline char when printing lines from a read-in file
+
 Tuesday
 - iterators __iter__
 - closures
