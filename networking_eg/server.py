@@ -2,7 +2,7 @@ import socket
 
 # we can instantiate a socket server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# param_tup = ('localhost', 9874)
+param_tup = ('localhost', 9874)
 # bind our server to some parameters
 server.bind(param_tup) # this is a tuple
 server.listen(5) # max requests

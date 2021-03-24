@@ -31,27 +31,34 @@ Tuesday
 > closures
 > functional programming: parameters
 > context manager
-- networking: url requests (more than just get)
-- introduce some end-points
-- networking server/client
 > after lunch lab exercise (inc optional material)
 - ask questions, help each other, share code (screen-share)
-- begin processing text xml json
-
-Wednesday
+> begin processing text xml json
 > json.loads() takes JSON and returns Python structure
 > json.dumps() takes Python and returns JSON
 > pickle ...
 > persisting files
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
+
+Q what it the point of __slots__
+
+Wednesday
+- networking: url requests (more than just get)
+- introduce some end-points
+- networking server/client
+- http 80 or https 443
+  req is http and the end-point is https
+- named tuple
+- zip
+- testing: doctest, unittest, pytest, mock
 - after lunch lab exercise
-- testing
 - profiling
 
 Thursday
 - logging
 - multi threading, performance
 - revisit deque, defaultdict etc
+- after lunch lab exercise
 - all my code available online
 - feedback forms: internal Ericsson and also for ITAG
