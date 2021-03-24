@@ -1,0 +1,49 @@
+Writing Tests and using client/server
+For this exercise, pick the ones you want to try
+until after the tea break - about 3:35
+Unit Testing with unittest: see https://pastebin.com/608BT0sv
+---------------------------
+Open the 'my_points.py' and 'my_points_test.py' modules
+https://pastebin.com/pmPzKwGi and https://pastebin.com/WwXXAYT4
+Add a method to the Point class which returns the hypotenuse derived from x and y
+  h = (x*x + y*y)**0.5 # h is a derived property, we never persist it as part of Point instances
+Write tests for this method. So x=3 y=4 gives h=5.00
+You may need 'assertAlmostEqual' with 'places=2' to get the test to pass
+
+Compare points at (3,4) and (-3,-4) and assert that they have the same hypotenuse
+
+Try to test the Point.point class property and understand why it is not equal to 1
+(You could just as easily test the Point.how_many_points() class method)
+For this exercise, just assert that it is greater than 0
+
+Write a test which tries to set a string value for x and asserts that an exeption is raised
+Change the Point class so self.__x  is exposed as a property through getter/setter methods
+(You will also need to adjust the __slots__ tuple)
+In the setter method, validate that x is an 'int' or 'float' and raise an exception if not
+
+Unit Testing and doctest:
+--------------------------
+See how many of the above tests can be achieved with doctest
+Also try to recreate the existing doctests (in 'cube', 'squares' and 'square_it') with unittest
+
+Client/Server:
+--------------
+Return to the client and server modules and adapt the server with several conditional blocks
+If the client asks for 'user/1':
+  the server should invoke a request to 'https://jsonplaceholder.typicode.com/users/1'
+  (do this by using yours or my code from earlier)
+If the client asks for 'weather/galway/ie':
+  the server should invoke a request for the weather (using code we already have)
+Make the client persist, asking the user for input, until the user enters 'quit'
+
+Unit Testing Across Architecture:
+---------------------------------
+Consider how unit tests could be implemented in the client, server and weather modules
+
+
+
+
+
+
+
+

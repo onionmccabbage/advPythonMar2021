@@ -41,13 +41,12 @@ Tuesday
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
 
-Q what it the point of __slots__
-
 Wednesday
-- networking: url requests (more than just get)
-- introduce some end-points
-- networking server/client
-- http 80 or https 443
+> networking: url requests (more than just get)
+> introduce some end-points
+> networking server/client
+> what it the point of __slots__
+> http 80 or https 443
   req is http and the end-point is https
 - named tuple
 - zip
