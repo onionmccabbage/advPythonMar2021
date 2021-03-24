@@ -6,7 +6,7 @@ class Point():
     def how_many_points():
         return Point.points
     def __init__(self, x=0, y=0):
-        self.x = x
+        self.x = x # uses the setter for __x
         self.y = y
         Point.points += 1
     @property

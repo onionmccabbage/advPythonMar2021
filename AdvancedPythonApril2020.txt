@@ -48,16 +48,21 @@ Wednesday
 > what it the point of __slots__
 > http 80 or https 443
   req is http and the end-point is https
-- named tuple
-- zip
-- testing: doctest, unittest, pytest, mock
-- after lunch lab exercise
-- profiling
+> named tuple
+> zip
+> testing: doctest, unittest, mock
+  see https://docs.python.org/3/library/doctest.html
+> after lunch lab exercise
+- pytest
 
 Thursday
+- brief look at the beyond advanced outline
+- revisit @property and __ name mangling (after 9:45)
+- a bit more pyttest (with zip and named tuple)
+- profiling, briefly debug
 - logging
 - multi threading, performance
-- revisit deque, defaultdict etc
+- deque, defaultdict etc
 - after lunch lab exercise
 - all my code available online
 - feedback forms: internal Ericsson and also for ITAG

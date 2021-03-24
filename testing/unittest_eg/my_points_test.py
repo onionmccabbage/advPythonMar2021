@@ -10,6 +10,10 @@ class testPoint(unittest.TestCase): # we name tests like this
         self.point = Point(3, 5)
 
     # declare tests
+    def testPointCounter(self):
+        self.assertGreater(Point.points, 0)
+        # self.assertEqual(Point.points, 1) # fails
+
     def testMoveBy1(self):
         '''testing the moveBy method'''
         self.point.move_by(5, 2)
@@ -32,9 +36,6 @@ class testPoint(unittest.TestCase): # we name tests like this
         self.p_positive = Point(3,4)
         self.p_negative = Point(-3,-4)
         self.assertAlmostEqual(self.p_negative.hypot(), self.p_positive.hypot(), places=2)
-
-    def testPointCounter(self):
-        self.assertGreater(Point.points, 0)
 
     def testStringValueFails(self):
         with self.assertRaises(TypeError):
