@@ -1,1 +1,1 @@
-Name: C-3PO Height: 167cm
+Name: C-3PO Height: 167cmName: Luke Skywalker Height: 172cmName: C-3PO Height: 167cmName: R2-D2 Height: 96cmName: Darth Vader Height: 202cmName: Luke Skywalker Height: 172cm

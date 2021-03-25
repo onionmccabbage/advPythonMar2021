@@ -53,16 +53,16 @@ Wednesday
 > testing: doctest, unittest, mock
   see https://docs.python.org/3/library/doctest.html
 > after lunch lab exercise
-- pytest
+> pytest
 
 Thursday
-- brief look at the 'beyond advanced Python' coure outline
-- revisit @property and __ name mangling (after 9:45)
-- a bit more pyttest (with zip and named tuple)
-- profiling, briefly debug
-- logging
-- multi threading, performance
-- after lunch lab exercise
-- deque, defaultdict etc
-- all my code available online
-- feedback forms: internal Ericsson and also for ITAG
+> brief look at the 'beyond advanced Python' coure outline
+> revisit @property and __ name mangling (after 9:45)
+> a bit more pyttest (with zip and named tuple)
+> profiling, briefly debug
+> logging
+> multi threading, performance
+> after lunch lab exercise
+> deque, defaultdict etc
+> all my code available online
+> feedback forms: internal Ericsson and also for ITAG
