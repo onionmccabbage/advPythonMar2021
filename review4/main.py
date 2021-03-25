@@ -1,14 +1,13 @@
 # this is main.py
 import sys
 import json
-from pprint import pprint
 from swapi_service import SwapiService
 from people import People
 from vehicles import Vehicles
 from planets import Planets
 from species import Species
 
-class Menu:
+class Menu: # I chose not to descend fro mthe Thread class, but I can still call 'run()'
 
     categories = ('people', 'planets', 'species', 'vehicles')
 
@@ -31,12 +30,12 @@ class Menu:
         ''')
 
     def run(self):
-        while True:
+        while True: # a run-loop
             self.showMenu()
             choice = input('option? ')
             action = self.menu_choices.get(choice)
             if action:
-                action()
+                action() # this is a closure!
             else:
                 print("{} is not a valid option".format(choice))
 
@@ -52,7 +51,7 @@ class Menu:
         self.category = 'people'
         result_d = json.loads(SwapiService.getSwapi(self.category, self.getId()))
         self.people = People(result_d['name'], result_d['height'])
-        result = "Name: {} Height: {}cm".format(self.people.name, self.people.height)
+        result = "Name: {} Height: {}cm\n".format(self.people.name, self.people.height)
         print(result)
         self.appendData(result)
 
