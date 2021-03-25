@@ -1,0 +1,68 @@
+Python Advanced
+22-25 Mar 2021
+Toby Dussek
+
+9:30 start
+11:00 coffee
+12:20 lunch
+3:00 tea
+4:30 end
+
+Code repository is here: https://github.com/onionmccabbage/advPythonMar2021
+
+> please fill in profile form
+
+Monday
+> intro
+> what do you currently know
+> what do you want to know
+> classes - properties
+> functional programming: map filter and reduce
+> labs
+> comprehensions
+> generators
+> yield, next and custom generators 
+
+Question:
+> we can subsume the extra newline char when printing lines from a read-in file
+
+Tuesday
+> iterators __iter__
+> closures
+> functional programming: parameters
+> context manager
+> after lunch lab exercise (inc optional material)
+- ask questions, help each other, share code (screen-share)
+> begin processing text xml json
+> json.loads() takes JSON and returns Python structure
+> json.dumps() takes Python and returns JSON
+> pickle ...
+> persisting files
+> databases
+  see https://wiki.python.org/moin/DatabaseProgramming
+
+Wednesday
+> networking: url requests (more than just get)
+> introduce some end-points
+> networking server/client
+> what it the point of __slots__
+> http 80 or https 443
+  req is http and the end-point is https
+> named tuple
+> zip
+> testing: doctest, unittest, mock
+  see https://docs.python.org/3/library/doctest.html
+> after lunch lab exercise
+- pytest
+
+Thursday
+- brief look at the 'beyond advanced Python' coure outline
+- revisit @property and __ name mangling (after 9:45)
+- a bit more pyttest (with zip and named tuple)
+- profiling, briefly debug
+- logging
+- multi threading, performance
+- after lunch lab exercise
+- deque, defaultdict etc
+- all my code available online
+- feedback forms: internal Ericsson and also for ITAG
